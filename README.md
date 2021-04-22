@@ -4,6 +4,28 @@ Just a attempt to implement a lexer, parser in pure C without a lexer parser gen
 
 **Date:** 2019-2020
 
+## Input
+
+```
+main() {
+	5+5;
+}
+```
+
+## Output
+
+```
+- main(ident)
+- ((operator)
+- )(operator)
+- {(operator)
+- 5(number)
+- +(operator)
+- 5(number)
+- ;(operator)
+- }(operator)
+```
+
 ## Using
 
 ```bash
